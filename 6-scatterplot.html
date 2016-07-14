@@ -35,6 +35,12 @@
             .append("circle")
             .attr("cx", function(d){ return d[0];})
             .attr("cy", function(d){ return d[1];})
+            .attr("fill", function (d){
+              if(d[1] > 50){
+                return "red";
+              }
+              return "blue";
+            })
             .attr("r",5);
 
 
